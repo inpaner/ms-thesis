@@ -11,26 +11,56 @@ This chapter lists and discusses the specific steps and activities that will be 
 The discussion covers the activities from pre-proposal to Final Thesis Writing.  It also includes an initial discussion on the theoretical
 framework to be followed.
 
-\section{Research Activities}
-Research activities include inquiry, survey, research, brainstorming, canvassing, consultation, review, interview, observe, experiment, design, 
-test, document, etc.  The methodology also includes the following information:
+\section{Research Concept Formation}
+During this stage, the researcher will explore possible topics that will serve as the concept of the research. 
+Meetings between the researcher and the research adviser will be held on a regular basis. 
+Possible topics will be problems that have an impact on both Computer Science and society.
+The researcher will also explore possible tools and solutions that can solve said problems.
+Journals and papers of interest will also be examined.
 
-\begin{itemize}
-   \item who is responsible for the task
-   \item the resource person to be contacted
-   \item what will be done
-   \item when and how long will the activity be done
-   \item where will it be done
-   \item why should be activity be done
-\end{itemize}
+\section{Review of Related Literature}
+In order to fully understand the problem, the researcher will assess previous works related to the defined topic.
+The researcher will read on studies relevant to medical diagnosis, question-and-answer systems, and rule-based systems.
+Approaches used by similar studies will be compared with each other and be considered for usage in the research work.
 
+\section{Data Collection}
+Professionals in the medical field will be consulted regarding common diseases and their symptoms.
+Academic journals, books, and documents published by medical organizations will also be assessed.
+The researcher will also collect patient data available in existing databases.
+The information gathered at this stage will serve as the foundation of the system's knowledge base.
+
+During this stage, metrics for evaluating the system will be conceived.
+One of the metrics will be focused on the number of steps a session requires to narrow down the diagnosis to a list of plausible illnesses.
+The session will also be assessed on the types of questions and complexity of symptoms it asks as the session progresses.
+Finally, the system will be evaluated subjectively by medical professionals regarding how it closely simulates an actual question-and-answer session.
+
+\section{System Development}
+The system will be divided into modules and will be built in different stages. 
+
+\subsection{Inference Engine}
+This module will serve as the decision maker in each question and answer session.
+The engine will not necessarily provide a final diagnosis.
+It can also yield a list of impressions and plausible illnesses if diseases cannot be discriminated via symptoms alone, such as when laboratory tests are required.
+The inference engine will be developed on Java 1.8.
+
+\subsection{Visual Interface}
+The interface will display the state of the inference engine at each stage of the session.
+Design principles will be utilized in order for users to comprehend the visualizations on display.
+The aim is for users - including attending physicians and health workers - to easily visualize the system's decision making process.
+Transparency of the system's logic will enable users to build confidence on the system.
+This will also assist in correcting errors as the system continues to learn new concepts, diseases, and symptoms.
+Visualization will be developed on the Android operating system using the Android SDK.
+
+\subsection{Evaluation}
+In this phase, the developed system will be assessed based on the conceived metrics.
+ 
+\section{Documentation}
+The researcher will document the progress and results of the study throughout the duration of the study. 
 
 \section{Calendar of Activities}
 
-A Gantt chart showing the schedule of the activities should be included as a table. For example:
-
-Table \ref{tab:timetableactivities} shows a Gantt chart of the activities.  Each bullet represents approximately
-one week worth of activity.
+Table \ref{tab:timetableactivities} shows the schedule of activities for the year 2016.  
+Each bullet represents approximately one week worth of activity.
 
 %
 %  the following commands will be used for filling up the bullets in the Gantt chart
