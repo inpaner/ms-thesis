@@ -13,6 +13,13 @@ This also covers the objectives, scope and limitations of the research, signific
 
 \section{Overview of the Current State of Technology}
 \label{sec:overview}
+The proportion of Filipinos dying without medical attention has risen to seventy percent.
+This is further complicated by Filipino doctors leaving to work overseas.
+Since 2000, more than six thousand doctors-turned-nurses have left the country with five thousand more expected to go \cite{Harden:2008}.
+While the Philippines does not yet have a shortage of doctors, there is a shortage in poor rural areas.
+It is estimated that one doctor serves a population of thirty thousand, a stark contrast to the ideal ratio of one doctor for every thousand \cite{Manongdo:2014}.
+Overall, an estimated 10.8 million families rely on rural and city health units as well as barangay health stations for their primary care \cite{gmc:2013}.
+
 Expert systems are computer applications which employ non-algorithmic expertise for solving certain types of problems.
  These include diagnostic applications, financial planning, and real-time monitoring \cite{Merritt:2010}.
 A basic implementation of an expert system makes use of several components:
@@ -21,11 +28,11 @@ the inference engine which defines the manner in which new knowledge can be deri
 working memory which stores the information concerning the specific problem to be solved; 
 and an interface with which the user communicates with the system \cite{Agarwal:2014}. 
 
-Expert systems are usually divided into two categories: goal driven reasoning and data driven reasoning. 
+Expert systems are usually divided into two categories: goal driven reasoning and data driven reasoning \cite{Merritt:2010}. 
 Goal driven reasoning or backward chaining employs rules to repetitively break a goal into smaller sub-goals which are easier to prove. 
 Identification and diagnostic systems fit this model, with the aim of determining the correct diagnosis. 
-Data driven reasoning or forward chaining is used in configuration problems where inputs vary and can be comined in an almost infinite number of ways. 
-The system keeps track of the current state of the problem and identifies rules which will move the state closer to a final solution \cite{Merritt:2010}.
+Data driven reasoning or forward chaining is used in configuration problems where inputs vary and can be combined in an almost infinite number of ways. 
+The system keeps track of the current state of the problem and identifies rules which will move the state closer to a final solution .
 
 \citeA{Dayupay:2015} developed a system that automatically generates the history of present illness (HPI) of a patient.
 The HPI system makes use of an expert system to guide the user in methodically asking questions regarding their chief complaint. 
@@ -37,7 +44,7 @@ The application by Dayupay is a subsystem of the GetBetter system developed by \
 It is a cloud-based database and web application that stores patient records for viewing and diagnosis by physicians.
 It connects patients and physicians who are separated geographically using the web.
 Nurses, midwives, and health workers gather information regarding the patient's chief complaint and input details into the system.
-The HPI subsystem directs the interviewer when eliciting information from the patient, with the goal of enumerating possible disease impressions.
+The HPI system directs the interviewer when eliciting information from the patient, with the goal of enumerating possible disease impressions.
 The symptoms and impressions are sent over the web to the physician who will provide the final diagnosis.    
 
 \section{Research Objectives}
@@ -50,7 +57,6 @@ To develop a conceptual framework for a highly interactive medical diagnosis que
 
 \subsection{Specific Objectives}
 \label{sec:specificobjectives}
-
 
 \begin{enumerate}
     \item To survey the most prevalent medical diseases in Philippine rural areas along with their symptoms and related features;
@@ -65,19 +71,14 @@ To develop a conceptual framework for a highly interactive medical diagnosis que
 \section{Scope and Limitations of the Research}
 \label{sec:scopelimitations}
 
-The research will focus on common medical diseases found in Philippine rural areas. These are based on epidemiological studies conducted by the Deparment of Health of the Philippines.
+The research will focus on common medical diseases found in Philippine rural areas. 
+These are based on epidemiological studies conducted by the Department of Health of the Philippines.
 
-The expert system will be developed on the Android platform. Case records in the GetBetter database will be used to build the expert system model. 
+The expert system will be developed on the Android platform. 
+Case records in the GetBetter database will be used to build the expert system model. 
 
 \section{Significance of the Research}
 \label{sec:significance}
-
-The proportion of Filipinos dying without medical attention has risen to 70 percent.
-This is further complicated by Filipino doctors leaving to work overseas.
-Since 2000, more than 6,000 doctors-turned-nurses have left the country with 5,000 more expected to go \cite{Harden:2008}.
-While the Philippines does not yet have a shortage of doctors, there is a shortage in poor rural areas.
-It is estimated that one doctor serves a population of 30,000, a stark contrast to the ideal ratio of one doctor for every 1,000 \cite{Manongdo:2014}.
-Overall, an estimated 10.8 million familes rely on rural and city health units as well as barangay health stations for their primary care \cite{gmc:2013}.
 
 Barangay health workers serve as a safety net in the monitoring of health in their community and act as outreach for medical staff and midwives.
 They play a critical role for vulnerable populations who are isolated geographically or nautically \cite{DirectRelief:2014}.
