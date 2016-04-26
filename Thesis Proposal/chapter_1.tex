@@ -7,7 +7,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Research Description}
-\label{sec:researchdesc}    %--note: labels help you with hyperlink editing (using your IDE)
+\label{sec:researchdesc}
 This chapter discusses the current technologies in expert systems and diagnostic systems.
 This also covers the objectives, scope and limitations of the research, significance of the research, and the research methodology.
 
@@ -18,21 +18,7 @@ This is further complicated by Filipino doctors leaving to work overseas.
 Since 2000, more than six thousand doctors-turned-nurses have left the country with five thousand more expected to go \cite{Harden:2008}.
 While the Philippines does not yet have a shortage of doctors, there is a shortage in poor rural areas.
 It is estimated that one doctor serves a population of thirty thousand, a stark contrast to the ideal ratio of one doctor for every thousand \cite{Manongdo:2014}.
-Overall, an estimated 10.8 million families rely on rural and city health units as well as barangay health stations for their primary care \cite{gmc:2013}.
-
-Expert systems are computer applications which employ non-algorithmic expertise for solving certain types of problems.
- These include diagnostic applications, financial planning, and real-time monitoring \cite{Merritt:2010}.
-A basic implementation of an expert system makes use of several components:
-a knowledge base which form the human expert's knowledge; 
-the inference engine which defines the manner in which new knowledge can be derived from the current knowledge; 
-working memory which stores the information concerning the specific problem to be solved; 
-and an interface with which the user communicates with the system \cite{Agarwal:2014}. 
-
-Expert systems are usually divided into two categories: goal driven reasoning and data driven reasoning \cite{Merritt:2010}. 
-Goal driven reasoning or backward chaining employs rules to repetitively break a goal into smaller sub-goals which are easier to prove. 
-Identification and diagnostic systems fit this model, with the aim of determining the correct diagnosis. 
-Data driven reasoning or forward chaining is used in configuration problems where inputs vary and can be combined in an almost infinite number of ways. 
-The system keeps track of the current state of the problem and identifies rules which will move the state closer to a final solution .
+According to ICTedge writer \citeA{gmc:2013}, an estimated 10.8 million families rely on rural and city health units as well as barangay health stations for their primary care . 
 
 \citeA{Dayupay:2015} developed a system that automatically generates the history of present illness (HPI) of a patient.
 The HPI system makes use of an expert system to guide the user in methodically asking questions regarding their chief complaint. 
@@ -47,35 +33,68 @@ Nurses, midwives, and health workers gather information regarding the patient's 
 The HPI system directs the interviewer when eliciting information from the patient, with the goal of enumerating possible disease impressions.
 The symptoms and impressions are sent over the web to the physician who will provide the final diagnosis.    
 
+Expert systems are computer applications which employ non-algorithmic expertise for solving certain types of problems.
+ These include diagnostic applications, financial planning, and real-time monitoring \cite{Merritt:2010}.
+A basic implementation of an expert system makes use of several components:
+a knowledge base which form the human expert's knowledge; 
+the inference engine which defines the manner in which new knowledge can be derived from the current knowledge; 
+working memory which stores the information concerning the specific problem to be solved; 
+and an interface with which the user communicates with the system \cite{Agarwal:2014}. 
+
+Expert systems are usually divided into two categories: goal driven reasoning and data driven reasoning \cite{Merritt:2010}. 
+Goal driven reasoning or backward chaining employs rules to repetitively break a goal into smaller sub-goals which are easier to prove. 
+Identification and diagnostic systems fit this model, with the aim of determining the correct diagnosis. 
+Data driven reasoning or forward chaining is used in configuration problems where inputs vary and can be combined in an almost infinite number of ways. 
+Expert systems that use forward chaining keep track of the current state of the problem and identifies rules which will move the state closer to a final solution .
+
+There are hardly any data-driven and goal-driven medical diagnosis systems available for use in a rural setting.
+
 \section{Research Objectives}
 \label{sec:researchobjectives}
 
 \subsection{General Objective}
 \label{sec:generalobjective}
 
-To develop a conceptual framework for a highly interactive medical diagnosis question and answer session.
+To develop a conceptual framework for a interactive medical diagnosis question and answer session.
 
 \subsection{Specific Objectives}
 \label{sec:specificobjectives}
 
 \begin{enumerate}
     \item To survey the most prevalent medical diseases in Philippine rural areas along with their symptoms and related features;
-    %\item To put together a knowledge-base 
-    \item To conceive metrics for evaluating the system other than accuracy;
+   % \item To put together a knowledge-base that integrates data, medical diseases, relevant symptoms, and inferences;
     \item To build a data-driven and goal-driven rule-based system that can simulate question and answer sessions between attending physician and patient;
     \item To build an interface for the designed system that can visualize the inference mechanism; % add
-    \item To evaluate the performance of the expert system based on the conceived metrics.
+    \item To conceive metrics for evaluating the built system other than accuracy;
+    \item To evaluate the performance of the built system based on the conceived metrics.
 \end{enumerate}
-
 
 \section{Scope and Limitations of the Research}
 \label{sec:scopelimitations}
 
-The research will focus on common medical diseases found in Philippine rural areas. 
-These are based on epidemiological studies conducted by the Department of Health of the Philippines.
+The research will focus on common medical diseases that cause mortality and morbidity found in Philippine rural areas.
+These are based on epidemiological studies conducted by different organizations including the \citeA{phdoh:2016}, and the \citeA{who:2016}.
+Medical experts will also be consulted.
 
-The expert system will be developed on the Android platform. 
-Case records in the GetBetter database will be used to build the expert system model. 
+It is not required for the built rule-based system to provide a final diagnosis. It is sufficient to provide a list of impressions and plausible illnesses.
+The primary aim of the system will be to aid health workers when identifying the history of present illness of patients.
+The system would narrow down the necessary information out of hundreds of possible symptoms that users would elicit from patients.
+Ideally, these would be the most pertinent information that would enable medical professionals to accurately diagnose a patient's condition.
+The goal is not to replace the expertise of the medical professionals.
+
+As a subsystem of the existing GetBetter system, the proposed expert system will be developed on the Android platform.
+It will run on currently deployed devices.
+Moreover, the system will be used by health workers of different medical backgrounds and skill levels.
+Given that, the system will use non-technical medical terms in both English and Filipino.
+
+Accuracy will not be used as a metric to finish the proposed system given a restricted time frame.
+It is estimated that focusing on achieving a minimum accuracy level will extend development time by at least one year.
+Instead, one possible metric would be the number of questions that the subsystem will ask before a session ends.
+Another possible metric is the increasing specificity of questions and symptoms as the session progresses.
+During the start of a question-answer session, symptoms should be general to prune down the list of medical diseases.
+As the session progresses, symptoms should be more specific in order to pin-point a list of illnesses.
+One more possible metric is a subjective evaluation where medical professionals would use the developed system.
+Doctors would be asked to assess the system on whether its logic and line of questioning is similar to how medical professionals perform their interviews.
 
 \section{Significance of the Research}
 \label{sec:significance}
@@ -83,6 +102,6 @@ Case records in the GetBetter database will be used to build the expert system m
 Barangay health workers serve as a safety net in the monitoring of health in their community and act as outreach for medical staff and midwives.
 They play a critical role for vulnerable populations who are isolated geographically or nautically \cite{DirectRelief:2014}.
 
-Visualization of the dynamic interplay between data-driven and goal-driven methods would provide context to the current state of the system.
-This would enable health workers using the system to easily follow the logic that the expert system is pursuing. 
+Visualization of the dynamic interplay between data-driven and goal-driven methods would provide context to the current state of the developed system.
+This would enable health workers using the developed system to easily follow the logic that the expert system is pursuing. 
 As health workers use the system, they would also be more proficient in gathering information and be more knowledgeable in diagnosing diseases.

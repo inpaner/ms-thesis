@@ -9,12 +9,30 @@
 \chapter{Review of Related Literature}
 \label{sec:relatedlit}
 
-This chapter discusses the features, capabilities, and limitations of existing research, algorithms, or software 
-that are related/similar to the thesis.
+This chapter discusses existing research, algorithms, or software that are related to the thesis.
 
-\section{Medical Diagnosis}
-Medical diagnosis is the process of determining which disease or condition explains a person's symptoms and signs. 
-The information required to reach a diagnosis is usually collected from the history of present illness and physical examination.
+%\section{Medical Diagnosis}
+%Medical diagnosis is the process of determining which disease or condition explains a person's symptoms and signs. 
+%The information required to reach a diagnosis is usually collected from the history of present illness and physical examination.
+
+\section{Epidemiology of Diseases}
+Epidemiology is the branch of medicine that studies the distribution and determinants of healt-related states or events, and the application of this study to the control of diseases and other health problems \footnote{http://www.who.int/topics/epidemiology/en/}.
+Different methods can be used to carry out epidemiological research, including surveillance, descriptive studies, and analytical studies.
+
+In terms of statistics, diseases can be measured using different metrics \cite{nydoh:1999}. 
+\begin{itemize}
+\item \textit{Incidence} is the number of newly diagnosed cases of a disease. The incidence rate then is the number of new cases of a disease divided by the number of persons at risk for the disease.
+\item \textit{Prevalence} is the total number of disease existing in a population. 
+Similarly, the prevalence rate is the total number of cases of a disease existing in a population divided by the total population.
+\item \textit{Morbidity} is another term for illness and is not the number of deaths. 
+Prevalence is often used as a measure to determine the level of morbidity in a population.
+\item \textit{Mortality} is another term for death. The mortality rate is the number of deaths due to a disease divided by the total population.
+\end{itemize}
+
+Various organizations release health statistics regarding the top diseases that cause morbidity and mortality. 
+For the \citeA{phdoh:2016}, the top causes of mortality are diseases of the heart, diseases of the vascular system, pneumonias, malignant neoplasms or cancers, tuberculosis, accidents, chronic obstructive pulmonary disease and allied conditions, diabetes mellitus, nephritis or nephritic syndrome, and other diseases of respiratory system. 
+The \citeA{who:2015} uses data gathered since 2012.
+Their report show that the ten causes of mortality in the Philippines are ischemic heart disease, stroke, lower respiratory infections, diabetes mellitus, tuberculosis, hypertensive heart disease, chronic obstructive pulmonary disease, kidney diseases, interpersonal violence, and asthma.
 
 \section{Twenty Questions}
 Twenty questions is a spoken parlor game which encourages deductive reasoning and creativity \cite{wiki:twenty_questions}.
@@ -34,6 +52,15 @@ As of writing, the system has played 87 million games online.
 Another popular web program is Akinator \cite{Akinator:2016}.
 Akinator's database is limited to characters both fictional and non-fictional, but this restriction enables it to determine answers with high accuracy.
 The system is dynamic and learns from previous games, further increasing its accuracy.
-As of writing, the system has played 226 million games online with at least 60 thousand games daily.
-Akinator's dynamicity also enables it to learn new characters as they get introduced in real life.
-In this manner, Akinator can guess characters from pop culture and current events.
+As of writing, Akinator has played 226 million games online with at least 60 thousand games daily.
+Its dynamicity also enables it to learn new characters as they get introduced in real life.
+In this manner, Akinator can guess characters from pop culture and current events including Marvel superhero Iron Man and former Philippine president Fidel V. Ramos.
+
+The code of Akinator is kept closed source and there are no papers or articles written by the developers regarding how the program works.
+Different users online proposed possible solutions such as decision trees \cite{allain:2013} and fuzzy logic \cite{chan:2014}.
+In contrast, the developer of 20Q claims that the program uses neural networks  \cite{schrock:2006}.
+The program has been in development since 1988 and continues to learn with thirty to fifty thousand players daily.
+
+An artificial neural network is a mathematical representation of the human neural architecture, reflecting its learning and generalization abilities \cite{amato:2013}.
+A neural network is formed by a series of neurons that are organized in layers, where each neuron in a layer is connected with each neuron in the next layer through a weighted connection.
+ANNs are widely applied in research because they can model non-linear systems in which the relationship among variables is unknown or very complex.
